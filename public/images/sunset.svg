@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#fda4af" />
+      <stop offset="45%" stop-color="#fbcfe8" />
+      <stop offset="80%" stop-color="#ffe4e6" />
+      <stop offset="100%" stop-color="#fff1f2" />
+    </linearGradient>
+    <radialGradient id="sunGrad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff" />
+      <stop offset="40%" stop-color="#fed7aa" />
+      <stop offset="100%" stop-color="#fb7185" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Sky -->
+  <rect width="400" height="300" fill="url(#skyGrad)" />
+  <!-- Glowing Sun -->
+  <circle cx="200" cy="180" r="85" fill="url(#sunGrad)" />
+  <circle cx="200" cy="180" r="45" fill="#fff" opacity="0.9" />
+  <!-- Soft Clouds -->
+  <path d="M 60 210 Q 75 180 110 185 Q 140 160 180 180 Q 210 165 240 190 Q 270 175 300 200 Q 340 190 360 220 L 360 300 L 40 300 Z" fill="#ffe4e6" opacity="0.8" />
+  <path d="M 30 230 Q 80 200 130 220 Q 180 195 240 225 Q 300 205 370 235 L 400 300 L 0 300 Z" fill="#fecdd3" opacity="0.9" />
+  <!-- Sparkling Stars -->
+  <circle cx="70" cy="60" r="2.5" fill="#fff" opacity="0.8" />
+  <circle cx="330" cy="70" r="3" fill="#fff" opacity="0.8" />
+  <circle cx="150" cy="40" r="2" fill="#fff" opacity="0.7" />
+  <circle cx="270" cy="45" r="2.5" fill="#fff" opacity="0.7" />
+  <!-- Floating Hearts -->
+  <path d="M 320 130 C 320 125 315 120 310 120 C 305 120 300 125 300 130 C 300 125 295 120 290 120 C 285 120 280 125 280 130 C 280 140 300 152 300 155 C 300 152 320 140 320 130 Z" fill="#f43f5e" opacity="0.4" />
+</svg>

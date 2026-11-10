@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500;600;700&family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,400&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-gradient: radial-gradient(circle at 50% 30%, #fff0f4 0%, #fee6ed 50%, #fbd5e0 100%);
+  --paper-bg: #fffdfc;
+  --rose-primary: #f43f7a;
+  --rose-deep: #be1250;
+  --text-primary: #2d2428;
+  --text-muted: #826c75;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: var(--bg-gradient);
+  color: var(--text-primary);
+  font-family: -apple-system, BlinkMacSystemFont, 'Inter', 'Segoe UI', Roboto, sans-serif;
+  min-height: 100vh;
+  overflow-x: hidden;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Linear / Apple style subtle noise & ambient glow */
+.ambient-glow {
+  position: fixed;
+  inset: 0;
+  background: radial-gradient(circle at 50% 20%, rgba(254, 205, 220, 0.45) 0%, transparent 65%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* Custom Scrollbar for Letter */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(244, 63, 122, 0.22);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(244, 63, 122, 0.38);
+}
+
+/* 3D Envelope Helpers */
+.perspective-1200 {
+  perspective: 1200px;
+}
+
+.preserve-3d {
+  transform-style: preserve-3d;
+}
+
+.backface-hidden {
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+/* Paper texture lines */
+.paper-lines {
+  background-image: repeating-linear-gradient(
+    transparent,
+    transparent 31px,
+    rgba(244, 63, 122, 0.07) 31px,
+    rgba(244, 63, 122, 0.07) 32px
+  );
+  line-height: 32px;
+}
+
+/* Realistic tape sticker */
+.tape-strip {
+  position: absolute;
+  top: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 55px;
+  height: 18px;
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+  border-left: 2px dashed rgba(244, 63, 122, 0.2);
+  border-right: 2px dashed rgba(244, 63, 122, 0.2);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+/* Smooth dodging transition for No button */
+.dodge-transition {
+  transition: transform 0.38s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.2s ease;
+}
+
+/* Spring scale for Yes button */
+.spring-scale {
+  transition: transform 0.45s cubic-bezier(0.34, 1.56, 0.64, 1), box-shadow 0.3s ease;
+}
+
+/* Wax Seal 3D feel */
+.wax-seal {
+  background: radial-gradient(circle at 35% 35%, #ff7399 0%, #e11d62 55%, #9e1245 100%);
+  box-shadow:
+    0 4px 12px rgba(158, 18, 69, 0.35),
+    0 1px 2px rgba(255, 255, 255, 0.5) inset,
+    0 -2px 4px rgba(0, 0, 0, 0.2) inset;
+}
+
+/* Floating particle keyframes */
+@keyframes softFloat {
+  0%, 100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotate(2deg);
+  }
+}
+
+.animate-soft-float {
+  animation: softFloat 5s ease-in-out infinite;
+}

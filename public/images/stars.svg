@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300" width="100%" height="100%">
+  <defs>
+    <linearGradient id="nightSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#4a154b" />
+      <stop offset="50%" stop-color="#831843" />
+      <stop offset="85%" stop-color="#be185d" />
+      <stop offset="100%" stop-color="#f43f5e" />
+    </linearGradient>
+    <radialGradient id="moonGlow" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff" />
+      <stop offset="60%" stop-color="#fef08a" stop-opacity="0.8" />
+      <stop offset="100%" stop-color="#fef08a" stop-opacity="0" />
+    </radialGradient>
+  </defs>
+  <!-- Background Sky -->
+  <rect width="400" height="300" fill="url(#nightSky)" />
+  <!-- Glowing Crescent Moon -->
+  <circle cx="280" cy="95" r="45" fill="url(#moonGlow)" />
+  <path d="M 285 65 A 35 35 0 1 0 285 125 A 28 28 0 1 1 285 65 Z" fill="#fef08a" />
+  <!-- Cute Sleeping Face on Moon -->
+  <path d="M 270 92 Q 275 97 280 92" fill="none" stroke="#be185d" stroke-width="2" stroke-linecap="round" />
+  <ellipse cx="266" cy="98" rx="2.5" ry="1.5" fill="#f43f5e" opacity="0.6" />
+  <!-- Clouds at bottom -->
+  <path d="M 0 260 Q 60 210 120 240 Q 180 200 240 235 Q 300 210 360 245 L 400 300 L 0 300 Z" fill="#ffe4e6" opacity="0.25" />
+  <path d="M 40 280 Q 100 240 180 265 Q 260 235 340 270 L 400 300 L 0 300 Z" fill="#fff" opacity="0.35" />
+  <!-- Twinkling Stars -->
+  <g fill="#fff">
+    <!-- Star 1 -->
+    <path d="M 80 70 Q 80 80 90 80 Q 80 80 80 90 Q 80 80 70 80 Q 80 80 80 70 Z" />
+    <!-- Star 2 -->
+    <path d="M 170 60 Q 170 68 178 68 Q 170 68 170 76 Q 170 68 162 68 Q 170 68 170 60 Z" />
+    <!-- Star 3 -->
+    <path d="M 120 130 Q 120 136 126 136 Q 120 136 120 142 Q 120 136 114 136 Q 120 136 120 130 Z" />
+    <!-- Star 4 -->
+    <path d="M 330 160 Q 330 166 336 166 Q 330 166 330 172 Q 330 166 324 166 Q 330 166 330 160 Z" />
+  </g>
+  <circle cx="50" cy="110" r="1.5" fill="#fff" opacity="0.8" />
+  <circle cx="210" cy="110" r="2" fill="#fff" opacity="0.8" />
+  <circle cx="240" cy="50" r="1.5" fill="#fff" opacity="0.8" />
+  <circle cx="340" cy="60" r="2" fill="#fff" opacity="0.9" />
+  <circle cx="140" cy="190" r="1.5" fill="#fff" opacity="0.6" />
+  <!-- Constellation Hearts -->
+  <path d="M 70 170 C 70 166 66 162 62 162 C 58 162 55 165 55 169 C 55 175 70 184 70 186 C 70 184 85 175 85 169 C 85 165 82 162 78 162 C 74 162 70 166 70 170 Z" fill="#fda4af" opacity="0.5" />
+</svg>
